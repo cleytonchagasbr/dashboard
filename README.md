@@ -1,6 +1,6 @@
 # My Projects
 
-Projeto com fins de estudos das tecnologias/ferramentas NodeJs e Express
+Projeto para fins de estudos desenvolvido em NodeJs, Express..
 
 # Rotas
 ###### GET
