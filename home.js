@@ -2,10 +2,10 @@ const express = require("express");
 const server = express();
 server.use(express.json());
 
-const allProjects = ["Java web - Default", "NodeJs - Default"];
+const allVideos = ["Aula 1, Aula 2, Aula 3, Aula 4, Aula 5, Aula 6, Aula 7, Aula 8, Aula 9, Aula 10"];
 
 function checkIndexArray(req, res, next) {
-  const project = allProjects[req.params.index];
+  const project = allVideos[req.params.index];
   if (!project) {
     return res.status(400).json({ error: "Index not exists or errors" });
   }
@@ -19,23 +19,23 @@ server.use("/", (req, res, next) => {
   console.timeEnd("Request");
 });
 
-server.get("/projects/:index", checkIndexArray, (req, res) => {
+server.get("/videos/:index", checkIndexArray, (req, res) => {
   const { index } = req.params;
   return res.json(req.project);
 });
 
-server.get("/projects", (req, res) => {
-  return res.json(allProjects);
+server.get("/videos", (req, res) => {
+  return res.json(allVideos);
 });
 
-server.post("/projects", (req, res) => {
+server.post("/videos", (req, res) => {
   const { name } = req.body;
-  allProjects.push(name);
+  allVideos.push(name);
 
   return res.status(200).end();
 });
-server.put("/projects", (req, res) => {});
 
-server.delete("/projects", (req, res) => {});
+server.put("/videos", (req, res) => {});
+server.delete("/videos", (req, res) => {});
 
 server.listen(3000);
