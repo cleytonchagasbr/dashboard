@@ -1,8 +1,13 @@
-# My Projects
+# Using the Framework Express
 
-Projeto para fins de estudos desenvolvido em NodeJs, Express..
+- en
+Using the Framework Express
 
-# Rotas
+- pt
+Usando o Framework Express para criação de rotas com Node js.
+
+
+# End points
 
 ###### GET
 
@@ -10,14 +15,3 @@ Projeto para fins de estudos desenvolvido em NodeJs, Express..
 
 - /allVideos:id
 
-
-Aula 1
-Aula 2
-Aula 3
-Aula 4
-Aula 5
-Aula 6
-Aula 7
-Aula 8
-Aula 9
-Aula 10
